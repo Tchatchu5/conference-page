@@ -5,37 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conférence ABC</title>
     <style>
-        body {
+        html, body {
+            height: 100%; /* Assure que le body prend toute la hauteur de la fenêtre */
+            margin: 0; /* Supprime les marges par défaut du body */
             font-family: Arial, sans-serif;
-            background-image: url('votre-image-de-fond.jpg');
-            background-size: cover;
-            color: white;
+            color: goldenrod;
             text-align: center;
-            padding: 50px;
-            margin: 0;
+            background-image: url('bruno_affiche2.png'), url('geometry.png') ;
+            background-size: contain, 100%; 
+            background-position: center, center;
+            background-repeat: no-repeat;
+            /* background-color: rgba(0, 0, 0, 0.08); Couleur de fond de secours */
         }
-        .container {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
+
+        .content {
+            position: relative; /* Nécessaire pour le positionnement du texte */
+            padding: 0px; /* Ajoute du padding pour espacer le texte */
+            background-color: rgba(0, 0, 0, 0); /* Couleur de fond avec opacité pour meilleure lisibilité */
             border-radius: 10px;
-            display: inline-block;
-            margin-top: 50px;
+            display: inline-block; /* Conteneur en ligne pour centrer */
+            margin: 360px; /* Marge autour du texte */
         }
+
         h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
+            font-size: 2em;
+            margin-bottom: 0.3em;
+            line-height: 1.2; /* Ajuste l'espacement entre les lignes du titre */
         }
+
         p {
             font-size: 1.2em;
+            line-height: 0.2; /* Ajuste l'espacement entre les lignes du titre */
+        }
+
+        p2 {
+            font-size: 1.2em;
+            line-height: 1.2; /* Ajuste l'espacement entre les lignes du titre */
+        }
+
+        .speakers {
+            position: absolute;
+            top: 0;
+            width: 27%; /* Largeur des colonnes latérales */
+            background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond avec opacité pour meilleure lisibilité */
+            padding: 40px;
+            color: white;
+            text-align: left;
+            height: 100%; /* Prend toute la hauteur de l'écran */
+            box-sizing: border-box;
+        }
+
+        .speakers.left {
+            left: 0;
+        }
+
+        .speakers.right {
+            right: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Conférence ABC</h1>
-        <p>Rejoignez-nous le 25 septembre 2024</p>
-        <p>Lieu : Centre de conférences XYZ, Paris</p>
-        <p>Une journée de discussions et d'apprentissages autour de l'innovation.</p>
+    <div class="speakers left">
+        <h2>Speakers</h2>
+        <p>Gérard Besson </p>
+        <p>(Institut Fourier)</p>
+        <p2>Gilles Courtois</p2>
+        <p2> (Sorbonne)</p2>
+        <p>Alexandre Girouard </p>
+        <p>(Université Laval)</p>
+    </div>
+
+    <div class="content">
+        <h1>ColboisFest</h1>
+        <p>28-29 October 2024</p>
+        <p>Université de Neuchâtel</p>
+    </div>
+
+    <div class="speakers right">
+        <h2>Speakers</h2>
+        <p>Katie Gittins </p>
+        <p>(Durham)</p>
+        <p2>Asma Hassannezhad </p2>
+        <p2>(Bristol)</p2>
+        <p>Corentin Lena </p>
+        <p>(Padua)</p>
     </div>
 </body>
 </html>
