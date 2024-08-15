@@ -11,26 +11,28 @@
             font-family: Arial, sans-serif;
             color: goldenrod;
             text-align: center;
-            background-image: url('assets/bruno_affiche2.png'), url('assets/geometry.png') ;
+            background-image: url('assets/bruno_affiche2.png'), url('assets/geometry.png');
             background-size: contain, 100%; 
             background-position: center, center;
             background-repeat: no-repeat;
             /* background-color: rgba(0, 0, 0, 0.08); Couleur de fond de secours */
         }
 
-        .content {
-            position: relative; /* Nécessaire pour le positionnement du texte */
-            padding: 0px; /* Ajoute du padding pour espacer le texte */
-            background-color: rgba(0, 0, 0, 0); /* Couleur de fond avec opacité pour meilleure lisibilité */
-            border-radius: 10px;
-            display: inline-block; /* Conteneur en ligne pour centrer */
-            margin: 360px; /* Marge autour du texte */
-        }
-
         h1 {
             font-size: 2em;
             margin-bottom: 0.3em;
             line-height: 1.2; /* Ajuste l'espacement entre les lignes du titre */
+            position: absolute;
+            top: -20px; /* Régle la distance entre le haut de l'image et le texte */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .bottom-text {
+            position: absolute;
+            bottom: -10px; /* Régle la distance entre le bas de l'image et le texte */
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         p {
@@ -80,8 +82,10 @@
 
     <div class="content">
         <h1>ColboisFest</h1>
-        <p>28-29 October 2024</p>
-        <p>Université de Neuchâtel</p>
+        <div class="bottom-text">
+            <p>28-29 October 2024</p>
+            <p>Université de Neuchâtel</p>
+        </div>
     </div>
 
     <div class="speakers right">
