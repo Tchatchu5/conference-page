@@ -38,9 +38,12 @@
             line-height: 0.2; /* Ajuste l'espacement entre les lignes du titre */
         }
 
-        p2 {
-            font-size: 1.2em;
-            line-height: 1.2; /* Ajuste l'espacement entre les lignes du titre */
+        .p-close {
+            margin-bottom: 2px; /* Très peu d'espace après ce paragraphe */
+        }
+
+        .p-far {
+            margin-bottom: 50px; /* Beaucoup d'espace après ce paragraphe */
         }
 
         .speakers {
@@ -67,12 +70,12 @@
 <body>
     <div class="speakers left">
         <h2>Speakers</h2>
-        <p>Gérard Besson </p>
-        <p>(Institut Fourier)</p>
-        <p2>Gilles Courtois</p2>
-        <p2>(Sorbonne)</p2>
-        <p>Alexandre Girouard </p>
-        <p>(Université Laval)</p>
+        <p class="p-close">Gérard Besson </p>
+        <p class="p-far">(Institut Fourier)</p>
+        <p class="p-close">Gilles Courtois</p>
+        <p class="p-far">(Sorbonne)</p>
+        <p class="p-close">Alexandre Girouard </p>
+        <p class="p-far">(Université Laval)</p>
     </div>
 
     <div class="content">
@@ -83,12 +86,12 @@
 
     <div class="speakers right">
         <h2>Speakers</h2>
-        <p>Katie Gittins </p>
-        <p>(Durham)</p>
-        <p2>Asma Hassannezhad </p2>
-        <p2>(Bristol)</p2>
-        <p>Corentin Lena </p>
-        <p>(Padua)</p>
+        <p class="p-close">Katie Gittins </p>
+        <p class="p-far">(Durham)</p>
+        <p class="p-close">Asma Hassannezhad </p>
+        <p class="p-far">(Bristol)</p>
+        <p class="p-close">Corentin Lena </p>
+        <p class="p-far">(Padua)</p>
     </div>
 </body>
 </html>
