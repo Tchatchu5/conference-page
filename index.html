@@ -83,6 +83,13 @@
             width: 100%;
         }
 
+        /* Styles pour le bouton en haut à droite */
+        .menu-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
         /* Adaptations pour les petits écrans */
         @media (max-width: 768px) {
             h1 {
@@ -108,12 +115,12 @@
             .speakers {
                 display: none; /* Masquer les colonnes gauche et droite */
             }
-
         }
     </style>
 </head>
 
 <body>
+
     <div class="container-fluid h-100 d-flex flex-column">
         <div class="row flex-grow-1">
             <div class="col-md-3 speakers">
@@ -132,7 +139,7 @@
                 <h1><a href="assets/BrunoColbois.pdf" target="_blank" style="color: inherit; text-decoration: none;">ColboisFest</a></h1>
                 <h3>On the occasion of Bruno's 65<sup>th</sup> birthday</h3>
                 <div class="bottom-text">
-                    <p>28-29 October 2024</p>
+                    <p><a href="horaires.html" style="color: inherit; text-decoration: none;">28-29 October 2024 : planning</a></p>
                     <p><a href="https://www.unine.ch/math/" target="_blank" style="color: inherit; text-decoration: none;">Université de Neuchâtel</a></p>
                 </div>
                 <div class="organisers">
@@ -155,9 +162,10 @@
     </div>
 
     <!-- Inclure Bootstrap JS et ses dépendances -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
